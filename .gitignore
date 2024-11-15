@@ -1,0 +1,9 @@
+# Ignorar directorios y archivos generados por Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.lock.hcl
+
+# Ignorar carpetas específicas (por si están en subdirectorios como `env/dev`)
+**/.terraform/
+**/.terraform.lock.hcl
